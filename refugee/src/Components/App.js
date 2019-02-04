@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import authenticate from './Components/authentication/authentication';
+import { StoriesView } from '../views';
+
+// import authenticate from './authentication';
 
 class App extends Component {
   constructor(props) {
@@ -21,10 +23,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1>App Test</h1>
+        <StoriesView />
       </div>
     );
   }
 }
 
 
-export default authenticate(App);
+// export default authenticate(App);
+
+export default App;
